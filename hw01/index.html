@@ -3,9 +3,32 @@
 	<body> 
 		<h1> Hw1 </h1>
 		<ol>
-		<li><a href="https://drive.google.com/file/d/12ATXIX_0417UZUdkAVBHXgZKbrdKUQ_2/view?usp=sharing">下載 otf 字型檔</a></li>
-		<li><a href="https://colab.research.google.com/drive/19IjaQDOkZwYQ0s9i3N-EFUnplGeKPDhb">連到 Colab 程式碼</a></li>
-		<li><a href="https://drive.google.com/file/d/1vLFT80iCHNvEYfZ39NS15Qg3fXrLMl7O/view?usp=sharing">下載 ttf 字型檔</a></li>
+			<li>
+				<a href="javascript:void(0);" 
+				onClick="openWindow('https://drive.google.com/file/d/12ATXIX_0417UZUdkAVBHXgZKbrdKUQ_2/view?usp=sharing');">
+					下載 otf 字型檔
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" 
+				onClick="openWindow('https://colab.research.google.com/drive/19IjaQDOkZwYQ0s9i3N-EFUnplGeKPDhb');">
+					連到 Colab 程式碼
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" 
+				onClick="openWindow('https://drive.google.com/file/d/1vLFT80iCHNvEYfZ39NS15Qg3fXrLMl7O/view?usp=sharing');">
+					下載 ttf 字型檔
+				</a>
+			</li>
 		</ol>
+		<script>
+			function openWindow()
+			{
+				// parameters: URL, name(default:_blank,...), specs
+				// _blank make URL loading to other tab, but I just want to load URL in a small (child) window.
+				window.open(arguments[0], "child window", "width=550,height=550,left=150,top=200,toolbar=0,status=0,");
+			}
+		</script>
 	</body>
 </html>
